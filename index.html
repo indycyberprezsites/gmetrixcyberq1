@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cybersecurity defense-in-depth study guide with layered physical and device security references, summaries, and quizzes." />
+    <title>Defense in Depth Study Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">
+          <span class="brand-icon" data-lucide="shield"></span>
+          <span class="brand-text">Defense in Depth Hub</span>
+        </div>
+        <nav class="main-nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+            <span class="nav-toggle-line"></span>
+            <span class="nav-toggle-line"></span>
+            <span class="nav-toggle-line"></span>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <ul id="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#access-control">Access Control</a></li>
+            <li><a href="#site-security">Site Security</a></li>
+            <li><a href="#mantraps">Mantraps</a></li>
+            <li><a href="#device-security">Computer &amp; Device Security</a></li>
+            <li><a href="#removable-media">Removable Media</a></li>
+            <li><a href="#summary">Summary / Exam Notes</a></li>
+            <li><a href="#quiz">Quiz / Flashcards</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="section hero-section" aria-labelledby="hero-title">
+        <div class="container grid-hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Defense in Depth</p>
+            <h1 id="hero-title">Security isn’t one wall—it’s layers of defense.</h1>
+            <p class="lead">
+              Explore the journey from perimeter protections to device safeguards and learn how each layer reinforces the next. Perfect for cybersecurity learners, IT teams, and exam prep.
+            </p>
+            <div class="quick-links" role="navigation" aria-label="Quick access">
+              <a class="quick-card" href="#access-control">
+                <span data-lucide="key"></span>
+                <span>Access Control</span>
+              </a>
+              <a class="quick-card" href="#site-security">
+                <span data-lucide="building"></span>
+                <span>Site Security</span>
+              </a>
+              <a class="quick-card" href="#mantraps">
+                <span data-lucide="door-closed"></span>
+                <span>Mantraps</span>
+              </a>
+              <a class="quick-card" href="#device-security">
+                <span data-lucide="cpu"></span>
+                <span>Device &amp; Media</span>
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="layer-stack">
+              <div class="layer-card">
+                <span class="layer-label">Outside</span>
+                <span class="layer-icon" data-lucide="trees"></span>
+              </div>
+              <div class="layer-card">
+                <span class="layer-label">Internal Perimeter</span>
+                <span class="layer-icon" data-lucide="badge-check"></span>
+              </div>
+              <div class="layer-card">
+                <span class="layer-label">Server Room</span>
+                <span class="layer-icon" data-lucide="server"></span>
+              </div>
+              <div class="layer-card">
+                <span class="layer-label">Device</span>
+                <span class="layer-icon" data-lucide="monitor"></span>
+              </div>
+              <div class="layer-card">
+                <span class="layer-label">Data</span>
+                <span class="layer-icon" data-lucide="shield-check"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quote-banner">
+          <p>“Start with the outside, but never stop at the door.”</p>
+        </div>
+      </section>
+
+      <section id="access-control" class="section" aria-labelledby="access-title">
+        <div class="container narrow">
+          <header class="section-header">
+            <span class="section-icon" data-lucide="key-round"></span>
+            <h2 id="access-title">Access Control</h2>
+            <p class="section-subtitle">
+              Limit the physical and logical entry points so only authorized people reach sensitive systems.
+            </p>
+          </header>
+          <article class="glass-card">
+            <p>
+              Access control restricts who can enter or interact with critical assets. Protect the crown jewels first—servers and critical data—and extend controls outward through rooms, floors, and the full facility.
+            </p>
+            <ul class="accent-list">
+              <li>Restrict access to sensitive areas across every organization size.</li>
+              <li>Safeguard equipment like servers, workstations, and networking gear.</li>
+              <li>Protect confidential data and intellectual property.</li>
+              <li>Keep employees, contractors, and visitors safe.</li>
+            </ul>
+            <div class="access-diagram" role="img" aria-label="Inside-out security from servers to campus">
+              <div class="access-layer">
+                <span data-lucide="server"></span>
+                <span>Server</span>
+              </div>
+              <div class="access-arrow" aria-hidden="true" data-lucide="arrow-right"></div>
+              <div class="access-layer">
+                <span data-lucide="door-closed"></span>
+                <span>Room</span>
+              </div>
+              <div class="access-arrow" aria-hidden="true" data-lucide="arrow-right"></div>
+              <div class="access-layer">
+                <span data-lucide="building-2"></span>
+                <span>Building</span>
+              </div>
+              <div class="access-arrow" aria-hidden="true" data-lucide="arrow-right"></div>
+              <div class="access-layer">
+                <span data-lucide="map-pin"></span>
+                <span>Campus</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="site-security" class="section blueprint" aria-labelledby="site-title">
+        <div class="container wide">
+          <header class="section-header">
+            <span class="section-icon" data-lucide="scan"></span>
+            <h2 id="site-title">Site Security</h2>
+            <p class="section-subtitle">Layer defenses from the outer perimeter inward, adapting to campus-style layouts.</p>
+          </header>
+          <div class="grid-2">
+            <table class="layer-table">
+              <thead>
+                <tr>
+                  <th scope="col">Layer</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Example Controls</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">External Perimeter</th>
+                  <td>The outermost line of defense.</td>
+                  <td>Fences, gates, guards, CCTV</td>
+                </tr>
+                <tr>
+                  <th scope="row">Internal Perimeter</th>
+                  <td>Spaces just inside primary entrances.</td>
+                  <td>Badges, reception desks, ID checks</td>
+                </tr>
+                <tr>
+                  <th scope="row">Secure Areas</th>
+                  <td>Highly restricted zones for critical assets.</td>
+                  <td>Server rooms, labs, vaults</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="blueprint-visual" role="img" aria-label="Campus with three color-coded security zones">
+              <div class="zone external">
+                <span data-lucide="radar"></span>
+                <p>External Perimeter</p>
+              </div>
+              <div class="zone internal">
+                <span data-lucide="badge-check"></span>
+                <p>Internal Perimeter</p>
+              </div>
+              <div class="zone secure">
+                <span data-lucide="server"></span>
+                <p>Secure Areas</p>
+              </div>
+            </div>
+          </div>
+          <p class="note">
+            On a campus, every building can serve as its own internal perimeter. Inside each one, apply separate controls for server rooms, research labs, or other high-security spaces.
+          </p>
+        </div>
+      </section>
+
+      <section id="mantraps" class="section" aria-labelledby="mantrap-title">
+        <div class="container narrow">
+          <header class="section-header">
+            <span class="section-icon" data-lucide="door-open"></span>
+            <h2 id="mantrap-title">Mantraps</h2>
+            <p class="section-subtitle">One person at a time. No tailgating. Continuous verification.</p>
+          </header>
+          <article class="glass-card">
+            <p>
+              A mantrap is a controlled entry chamber with two interlocking doors. Only one door opens at a time, creating an enforced pause between public and secure areas.
+            </p>
+            <ol class="process">
+              <li>
+                <span class="step-icon" data-lucide="log-in"></span>
+                <div>
+                  <h3>Entry</h3>
+                  <p>The first door unlocks for a single authorized person.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-icon" data-lucide="door-closed"></span>
+                <div>
+                  <h3>Secure Check</h3>
+                  <p>The door closes behind them while guards or sensors validate identity.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-icon" data-lucide="shield-check"></span>
+                <div>
+                  <h3>Release</h3>
+                  <p>If cleared, the second door opens into the secure zone.</p>
+                </div>
+              </li>
+            </ol>
+            <div class="mantrap-visual" role="img" aria-label="Animated mantrap blocking tailgating">
+              <div class="door door-left">Public</div>
+              <div class="chamber">
+                <div class="person solo" aria-hidden="true"></div>
+                <div class="person tailgater" aria-hidden="true" title="Tailgater blocked"></div>
+              </div>
+              <div class="door door-right">Secure</div>
+            </div>
+            <p class="note">
+              Mantraps are ideal at transitions between lobbies and server rooms, data centers, or laboratories. They deter tailgating and provide time for identity verification.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="device-security" class="section dark-tech" aria-labelledby="device-title">
+        <div class="container wide">
+          <header class="section-header">
+            <span class="section-icon" data-lucide="cpu"></span>
+            <h2 id="device-title">Computer &amp; Device Security</h2>
+            <p class="section-subtitle">Lock down endpoints with layered physical and logical defenses.</p>
+          </header>
+          <div class="device-grid">
+            <article class="device-card">
+              <h3>
+                <span data-lucide="server"></span>
+                Servers
+              </h3>
+              <ul>
+                <li>House in locked server rooms or locking cabinets.</li>
+                <li>Consider bolted racks for tamper resistance.</li>
+                <li>Log physical access to track who enters sensitive spaces.</li>
+              </ul>
+            </article>
+            <article class="device-card">
+              <h3>
+                <span data-lucide="computer"></span>
+                Desktops &amp; Laptops
+              </h3>
+              <ul>
+                <li>Use cable locks or docking stations with security slots.</li>
+                <li>Lock desks and storage when unattended.</li>
+                <li>Enforce automatic screen locks and strong authentication.</li>
+              </ul>
+            </article>
+            <article class="device-card">
+              <h3>
+                <span data-lucide="smartphone"></span>
+                Mobile Devices
+              </h3>
+              <ul>
+                <li>Require PINs, passwords, or biometrics for access.</li>
+                <li>Deploy Mobile Device Management (MDM) solutions such as Intune.</li>
+                <li>Use MDM to enforce encryption, locate lost devices, and remote wipe.</li>
+              </ul>
+            </article>
+            <article class="device-card">
+              <h3>
+                <span data-lucide="keyboard"></span>
+                Keyloggers
+              </h3>
+              <ul>
+                <li>Hardware keyloggers sit between keyboard and PC—inspect cabling.</li>
+                <li>Software keyloggers ride on malware—keep antivirus active and updated.</li>
+                <li>Wireless keyboards can be intercepted—prefer encrypted peripherals.</li>
+              </ul>
+            </article>
+          </div>
+          <div class="device-infographic" role="img" aria-label="Devices mapped to threats and defenses">
+            <div class="device-lane">
+              <div class="device-node">
+                <span data-lucide="monitor"></span>
+                <p>Device</p>
+              </div>
+              <span class="lane-arrow" data-lucide="arrow-right"></span>
+              <div class="device-node threat">
+                <span data-lucide="bug"></span>
+                <p>Threat</p>
+              </div>
+              <span class="lane-arrow" data-lucide="arrow-right"></span>
+              <div class="device-node defense">
+                <span data-lucide="shield"></span>
+                <p>Defense</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="removable-media" class="section" aria-labelledby="media-title">
+        <div class="container narrow">
+          <header class="section-header">
+            <span class="section-icon" data-lucide="usb"></span>
+            <h2 id="media-title">Removable Media</h2>
+            <p class="section-subtitle">Portable storage brings flexibility—and attack surface. Control it.</p>
+          </header>
+          <article class="glass-card split">
+            <div class="media-panel risk" aria-label="Unprotected removable drive">
+              <span data-lucide="usb"></span>
+              <h3>Unprotected</h3>
+              <ul>
+                <li>Unrestricted USB/CD ports invite malware and data theft.</li>
+                <li>No encryption means lost drives expose sensitive files.</li>
+                <li>Attackers may plant rogue devices to pivot inside.</li>
+              </ul>
+            </div>
+            <div class="media-panel secure" aria-label="Encrypted removable drive">
+              <span data-lucide="shield"></span>
+              <h3>Encrypted</h3>
+              <ul>
+                <li>Disable or tightly manage USB and optical ports.</li>
+                <li>Encrypt with BitLocker or BitLocker To Go when enabled.</li>
+                <li>Store recovery keys separately from the media itself.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="summary" class="section study-guide" aria-labelledby="summary-title">
+        <div class="container narrow">
+          <header class="section-header">
+            <span class="section-icon" data-lucide="notebook"></span>
+            <h2 id="summary-title">Summary / Exam Notes</h2>
+            <p class="section-subtitle">Use these quick references during study sessions or pre-exam reviews.</p>
+          </header>
+          <div class="summary-content">
+            <p>
+              Defense in Depth layers controls so that each barrier buys time, reduces risk, and signals attacks quickly. Pair physical measures such as fences and mantraps with logical controls like encryption and MDM policies.
+            </p>
+            <table class="summary-table">
+              <thead>
+                <tr>
+                  <th scope="col">Topic</th>
+                  <th scope="col">Key Idea</th>
+                  <th scope="col">Security Mechanism</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Access Control</th>
+                  <td>Restrict access to critical assets.</td>
+                  <td>Keys, cards, biometrics, logging.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Site Security</th>
+                  <td>Stack physical protections in layers.</td>
+                  <td>Fences → Locks → Secure rooms.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Mantraps</th>
+                  <td>Stop tailgating with controlled entry.</td>
+                  <td>Dual-door vestibules with verification.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Device Security</th>
+                  <td>Protect endpoints from tampering.</td>
+                  <td>Locks, MDM, encryption, monitoring.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Removable Media</th>
+                  <td>Control data flow on portable drives.</td>
+                  <td>Disable ports or enforce encryption.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="quiz" class="section" aria-labelledby="quiz-title">
+        <div class="container wide">
+          <header class="section-header">
+            <span class="section-icon" data-lucide="help-circle"></span>
+            <h2 id="quiz-title">Quiz / Flashcards</h2>
+            <p class="section-subtitle">Test your understanding with rapid-fire questions and flipping flashcards.</p>
+          </header>
+          <div class="quiz-controls">
+            <button id="toggle-view" class="btn-outline" aria-pressed="false">Switch to Flashcard Mode</button>
+          </div>
+          <div id="quiz-list" class="quiz-list" aria-live="polite"></div>
+          <div id="flashcard-grid" class="flashcard-grid" hidden aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Defense in Depth Study Hub. Build your layers. Protect what matters.</p>
+        <a class="back-to-top" href="#home">
+          <span data-lucide="arrow-up"></span>
+          Back to top
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
